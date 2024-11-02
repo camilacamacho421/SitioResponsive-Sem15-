@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .quadrant {
+            height: 80px; /* Altura de los cuadrantes */
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            font-size: 16px; /* Tamaño de fuente */
+            border: 1px solid #ddd; /* Borde gris claro */
+            border-radius: 5px; /* Bordes redondeados */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mi Página</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#">Opción 1</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#">Opción 2</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#">Opción 3</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#">Opción 4</a>
+                </li>
+                <li class="nav-item dropdown d-lg-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Opciones
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Opción 1</a>
+                        <a class="dropdown-item" href="#">Opción 2</a>
+                        <a class="dropdown-item" href="#">Opción 3</a>
+                        <a class="dropdown-item" href="#">Opción 4</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="d-flex d-lg-none">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container text-center mt-5">
+    <h1>Título de la Página</h1>
+    
+    <div id="carouselExample" class="carousel slide mt-3" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h5>Primera línea de texto del subtítulo.</h5>
+            </div>
+            <div class="carousel-item">
+                <h5>Segunda línea de texto del subtítulo.</h5>
+            </div>
+            <div class="carousel-item">
+                <h5>Terce línea de texto del subtítulo.</h5>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </a>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="quadrant">Opción 1</div>
+            <div class="quadrant">Opción 2</div>
+            <div class="quadrant">Opción 3</div>
+            <div class="quadrant">Opción 4</div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <h4>Título de la columna 2</h4>
+            <p>Este es un texto más largo que explica el contenido de la columna 2. Puedes incluir más información relevante aquí, para que los visitantes comprendan mejor el tema tratado.</p>
+        </div>
+        <div class="col-lg-3 d-none d-md-block">
+            <h4>Título de la columna 3</h4>
+            <p>En esta columna puedes agregar aún más detalles sobre el contenido que se presenta. Esto puede incluir ejemplos, descripciones, o cualquier otra información pertinente para el usuario.</p>
+        </div>
+        <div class="col-lg-3 d-none d-md-block">
+            <h4>Título de la columna 4</h4>
+            <p>Aquí puedes proporcionar información adicional que complemente el tema general de la página. Esto puede ser útil para dar contexto y mayor comprensión al lector.</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
